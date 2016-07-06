@@ -1,0 +1,9 @@
+block append stylesheets
+  link(rel='stylesheet', href='./mixins/nav.css')
+
+//- Declaration
+mixin nav(selectedView)
+  nav.main-nav
+    ul
+      li(class={active: selectedView === 1}) foo
+      li(class={active: selectedView === 2}) baz

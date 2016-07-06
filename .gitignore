@@ -36,3 +36,5 @@ node_modules
 # SASS generated files
 public/stylesheets/*.css
 public/stylesheets/*.css.map
+client/**/*.css
+client/**/*.css.map

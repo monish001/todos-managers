@@ -1,0 +1,13 @@
+doctype html
+html
+  include ../mixins/nav.jade
+  head
+    title todos manager
+    block stylesheets
+      link(rel='stylesheet', href='./layouts/layout.css')
+  body
+    div(class="layout-header")
+      h1 todos manager
+    div(class="layout-content")
+      block content
+    div(class="layout-footer") copyright 2016, all rights reserved.
