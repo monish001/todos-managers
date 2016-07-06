@@ -1,0 +1,18 @@
+
+doctype html
+html
+  //- Declaration
+  mixin list(selectedView)
+    ul
+      li(class={active: selectedView === 1}) foo
+      li(class={active: selectedView === 2}) baz
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+  body
+    div(class="layout-header")
+      h1 TODOs Manager
+    div(class="layout-content")
+      block content
+    div(class="layout-footer") copyright 2016, all rights reserved.
