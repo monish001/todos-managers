@@ -1,13 +1,21 @@
 doctype html
 html
-  include ../mixins/nav.jade
   head
     title todos manager
+
     block stylesheets
       link(rel='stylesheet', href='./layouts/layout.css')
+
+    // include all the mixins
+    include ../mixins/nav.jade
+
   body
-    div(class="layout-header")
+
+    header.layout-header
       h1 todos manager
-    div(class="layout-content")
+
+    main.layout-content
       block content
-    div(class="layout-footer") copyright 2016, all rights reserved.
+
+    footer.layout-footer copyright 2016, all rights reserved.
+

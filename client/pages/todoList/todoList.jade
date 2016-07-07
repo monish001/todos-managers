@@ -1,1 +1,12 @@
-todoList.jade
+extends ../../layouts/layout
+
+append stylesheets
+  link(rel='stylesheet', href='./pages/todoList/todoList.css')
+
+block content
+  +nav('todoList')
+  .todo-list-container
+    h2 todo list
+    item 1
+    item 2
+    item 3

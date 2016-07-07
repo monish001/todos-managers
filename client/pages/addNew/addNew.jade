@@ -1,6 +1,10 @@
 extends ../../layouts/layout
 
+append stylesheets
+  link(rel='stylesheet', href='./pages/addNew/addNew.css')
+
 block content
+  +nav('addNew')
   .add-new-container
     h2 add new form
     form
